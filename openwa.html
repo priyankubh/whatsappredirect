@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function openWin() {
+  let wanumber = new URLSearchParams(window.location.search).get('wanumber')
+  window.open("https://wa.me/"+wanumber+"?text=Hi");
+}
+</script>
+</head>
+<body>
+
+<form>
+  <input type="button" value="Open WhatsApp" onclick="openWin()">
+</form>
+
+</body>
+</html>
